@@ -1,0 +1,25 @@
+Database Notes
+
+// command keywords in mySQL are not case sensitive so you can write it in any way.
+
+example - create or Create or CREATE (any way really)
+
+// you also have to put a semicolon (;) at the end of each SQL statements.
+
+
+// To create a database
+CREATE DATABASE myDataBaseName;
+
+// To use a database
+USE myDataBaseName;
+
+// To drop (delete) a database
+DROP DATABASE myDataBaseName;
+
+// To make a database read only 
+(meaning you can't modify or drop the database but you can still get datas from it)
+ALTER DATABASE myDataBaseName READ ONLY = 1;
+
+// To disable read only
+ALTER DATABASE myDataBaseName READ ONLY = 0;
+
