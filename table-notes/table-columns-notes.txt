@@ -1,4 +1,4 @@
-Table Notes
+Table Columns Notes
 
 // To create a table
 CREATE TABLE myTableName (
@@ -21,7 +21,7 @@ RENAME TABLE myTableName TO myOtherTableName;
 
 // To add a column to a table
 ALTER TABLE myTableName
-ADD phone_number VARCHAR(15);
+ADD COLUMN phone_number VARCHAR(15);
 
 // To rename a column in a table
 ALTER TABLE myTableName
@@ -29,16 +29,16 @@ RENAME COLUMN phone_number TO email;
 
 // To modify the data type of a column
 ALTER TABLE myTableName
-MODIFY COLUMN email VARCHAR(100);
+MODIFY COLUMN email VARCHAR(100); || MODIFY email VARCHAR(100)
 
 // To change the order of columns
 ALTER TABLE myTableName
-MODIFY email VARCHAR(100)
+MODIFY COLUMN email VARCHAR(100) || MODIFY email VARCHAR(100);
 AFTER last_name;
 
 // To put the column in first
 ALTER TABLE myTableName
-MODIFY email VARCHAR(100)
+MODIFY COLUMN email VARCHAR(100) || MODIFY email VARCHAR(100);
 FIRST;
 
 // To drop a column

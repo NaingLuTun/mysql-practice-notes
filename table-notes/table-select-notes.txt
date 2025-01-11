@@ -1,0 +1,42 @@
+Table Select Notes
+
+Example Columns 
+| employee_id INT | first_name VARCHAR(50) | last_name VARCHAR(50) | hourly_pay DECIMAL(5, 2) | hire_date DATE |
+
+
+// To select all data from a table
+SELECT * FROM myTableName;
+
+// To select specific data from a table
+SELECT first_name, last_name, hourly_pay FROM myTableName;
+
+// Filter selectors
+
+SELECT * FROM myTableName
+WHERE employee_id = 1;
+-> will return the employee with the id 1.
+
+SELECT * FROM myTableName
+WHERE first_name = "Francis";
+-> will return the employee with the first name "Francis"
+
+SELECT * FROM myTableName
+WHERE hire_date <= "2023-01-04";
+-> will return the employees with hire date before or at 2023-01-04
+
+SELECT * FROM myTableName
+WHERE hourly_pay >= 15;
+-> will return the employees with hourly pay greater than or equal to 15
+
+SELECT * FROM myTableName
+WHERE employee_id != 1;
+-> will return the employees with the employee id not equal to 1
+
+SELECT * FROM myTableName
+WHERE hourly_pay IS NULL;
+-> will return the employees with an empty hourly pay
+
+SELECT * FROM myTableName
+WHERE hourly_pay IS NOT NULL;
+-> will return the employees that has an hourly pay value
+

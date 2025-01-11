@@ -1,0 +1,26 @@
+Table Rows Notes
+
+Example Columns 
+| employee_id INT | first_name VARCHAR(50) | last_name VARCHAR(50) | hourly_pay DECIMAL(5, 2) | hire_date DATE |
+
+
+
+// To insert a row of values into the table
+INSERT INTO myTableName
+VALUE (1, "Francis", "Chad", 500.50, 2025-01-12);
+
+
+// To insert multiple rows of values into the table
+INSERT INTO myTableName
+VALUE (2, "Derrick", "Wong", 1.50, 2025-01-13),
+      (3, "John", "Doe", 23.50, 2025-02-14),
+      (4, "Ross", "Geller", 35.50, 2025-01-12),
+      (5, "Chandler", "Bing", 35.50, 2025-01-12);
+
+
+// To insert a row of values but if you want to leave out some values
+INSERT INTO myTableName(employee_id, first_name, last_name)
+VALUE (6, "Joey", "Tribbiani")
+
+
+
