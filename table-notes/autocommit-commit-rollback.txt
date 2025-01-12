@@ -1,0 +1,10 @@
+Autocommit, Commit, Rollback Notes
+
+// To make the changes not save automatically
+SET AUTOCOMMIT = OFF;
+
+// To save the changes and make a saved point
+COMMIT;
+
+// To undo the changes and go back to the last saved point
+ROLLBACK;

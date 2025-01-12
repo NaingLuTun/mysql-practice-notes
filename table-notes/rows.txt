@@ -20,7 +20,7 @@ VALUE (2, "Derrick", "Wong", 1.50, 2025-01-13),
 
 // To insert a row of values but if you want to leave out some values
 INSERT INTO myTableName(employee_id, first_name, last_name)
-VALUE (6, "Joey", "Tribbiani")
+VALUE (6, "Joey", "Tribbiani");
 
 
 

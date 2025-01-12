@@ -1,0 +1,31 @@
+Update & Delete From Table Notes
+
+Example Columns 
+| employee_id INT | first_name VARCHAR(50) | last_name VARCHAR(50) | hourly_pay DECIMAL(5, 2) | hire_date DATE |
+
+// To update a value
+UPDATE myTableName
+SET hourly_pay = 15.25
+WHERE employee_id = 2;
+
+
+// To update multiple values
+UPDATE myTableName
+SET hourly_pay = 10.23,
+    hire_date = "2023-01-12"
+WHERE employee_id = 5;
+
+
+// Without where clause it will update the value to be the same in every column (Not recommanded)
+UPDATE myTableName
+SET hire_date = "2023-01-07";
+
+
+// To delete a row
+DELETE FROM myTableName
+WHERE employee_id = 2;
+
+
+// without where clause it will delete the whole table (not recommanded)
+DELETE FROM myTableName;
+
