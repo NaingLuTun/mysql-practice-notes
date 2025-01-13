@@ -2,7 +2,7 @@ Current Date, Current Time, and Current Date and Time
 
 // To insert the values to be the current date, current time and current date and time 
 INSERT INTO testTable
-VALUES (CURRENT_DATE(), CURRENT_TIME, NOW());
+VALUES (CURRENT_DATE(), CURRENT_TIME(), NOW());
 
 // CURRENT_DATE() -> gives you the today's date (2025-01-12)
 // CURRENTT_TIME() -> gives you the current's time (12:56:34)
