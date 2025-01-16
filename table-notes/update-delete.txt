@@ -3,6 +3,10 @@ Update & Delete From Table Notes
 Example Columns 
 | employee_id INT | first_name VARCHAR(50) | last_name VARCHAR(50) | hourly_pay DECIMAL(5, 2) | hire_date DATE |
 
+
+// To disable safe mode
+SET SQL_SAFE_UPDATES = 0;
+
 // To update a value
 UPDATE myTableName
 SET hourly_pay = 15.25
